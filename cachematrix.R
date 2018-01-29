@@ -33,3 +33,11 @@ cacheSolve <- function(x, ...) {
   x$setinverse(inv)
   inv
 }
+# As Tested out on RStudio Console
+
+#> my_matrix <- makeCacheMatrix(matrix(c(3,4,1,2), 2, 2))
+# The first time since it not already cached it does the inverse and caches it
+#> cacheSolve(my_matrix)
+#    [,1] [,2]
+#[1,]    1 -0.5
+#[2,]   -2  1.5
